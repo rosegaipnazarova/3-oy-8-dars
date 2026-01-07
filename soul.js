@@ -44,3 +44,46 @@
 
 //n5
 
+// function isAnagram(str1, str2) {
+//     if (str1.length !== str2.length) {
+//         return false
+//     }
+//     let s1 = str1.toLowerCase().split('').sort().join('')
+//     let s2 = str2.toLowerCase().split('').sort().join('')
+//     return s1 === s2
+// }
+// console.log(isAnagram("listen", "silent"));
+
+
+//n6
+
+// function longestUniqueSubstring(str) {
+//     let maxL = 0
+//     let start = 0
+//     let ind = {}
+//     for (let i = 0; i < str.length; i++) {
+//         if (ind[str[i]] !== undefined) {
+//             start = Math.max(start, ind[str[i]] + 1)
+//         }
+//         ind[str[i]] = i
+//         maxL = Math.max(maxL, i - start + 1)
+//     }
+//     return maxL
+// }
+// console.log(longestUniqueSubstring("abcabcbb"));
+
+//n7
+
+// function maxSubArraySum(arr) {
+//     let maxa = arr[0]
+//     let maxb = arr[0]
+//     for (let i = 1; i < arr.length; i++) {
+//         maxa = Math.max(arr[i], maxa + arr[i])
+//         maxb = Math.max(maxb, maxa)
+//     }
+//     return maxb
+// }
+// console.log(maxSubArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4])); 
+
+//n8
+
